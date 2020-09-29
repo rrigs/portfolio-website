@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body {
     background-color: #8caba8;
     font-family: 'Raleway', sans-serif;
@@ -157,6 +164,23 @@ button:hover, button:focus, .button:hover, .button:focus {
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
+}
+
+.contact-title {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-info {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contact-form {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 @supports (display: grid) {
