@@ -207,44 +207,47 @@ button:hover, button:focus, .button:hover, .button:focus {
   }
 }
 
-@keyframes color-change {
-  0% {
-    fill: #edc655;
+@keyframes sun-move {
+  from {
+    transform: translate(0, 0)
   }
-  50% {
-    fill: #f76414;
-  }
-  100% {
-    fill: #f31919;
+  to {
+    transform: translate(0, -50px)
   }
 }
 
 .sun {
-  animation: 4s color-change infinite alternate linear;
+  animation: 30s sun-move infinite alternate linear;
 }
 
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px)
+@keyframes color-change-light {
+  0% {
+    fill: #f9942f;
   }
-  to {
-    transform: translate(200px, 50px)
+  50% {
+    fill: #ee9943;
   }
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-  to {
-    transform: translate(100px, 48px);
+  100% {
+    fill: #f6b36f;
   }
 }
 
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+.firebig {
+  animation: 2s color-change-light infinite alternate linear;
+}
+
+@keyframes color-change-dark {
+  0% {
+    fill: #ff7c48;
+  }
+  50% {
+    fill: #fd6a30;
+  }
+  100% {
+    fill: #fd5227;
+  }
+}
+
+.firesmall {
+  animation: 4s color-change-dark infinite alternate linear;
 }
