@@ -5,46 +5,53 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body {
     background-color: #8caba8;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-}
-
-h1 {
+  }
+  
+  h1 {
     font-size: 24px;
     font-weight: 700;
-}
-
-h2 {
+  }
+  
+  h2 {
     font-size: 24px;
     font-weight: 700;
-}
-
-h3 {
+  }
+  
+  h3 {
     font-size: 18px;
     font-weight: 700;
-}
-
-a {
+  }
+  
+  a {
     color: #1a4460;
-}
-
-a:visited {
+  }
+  
+  a:visited {
     color: #510051;
-}
-
-a:hover, a:focus {
+  }
+  
+  a:hover, a:focus {
     text-decoration: none;
-}
-
-a:active {
+  }
+  
+  a:active {
     color: #89CDEC;
-}
-
-button {
+  }
+  
+  button {
     border: none;
     display: inline-block;
     font-family: inherit;
@@ -57,9 +64,9 @@ button {
     -webkit-transition: 0.2s opacity;
     -o-transition: 0.2s opacity;
     transition: 0.2s opacity;
-}
-
-.button {
+  }
+  
+  .button {
     border: none;
     display: inline-block;
     font-family: inherit;
@@ -72,52 +79,56 @@ button {
     -webkit-transition: 0.2s opacity;
     -o-transition: 0.2s opacity;
     transition: 0.2s opacity;
-}
-
-button:hover, button:focus, .button:hover, .button:focus {
+  }
+  
+  button:hover, button:focus, .button:hover, .button:focus {
     cursor: pointer;
     opacity: 0.8;
-}
-
-.button_secondary {
+  }
+  
+  #code-button-link {
+    color: #ffffff
+  }
+  
+  .button_secondary {
     background-color: #e46060;
     color: #000000;
-}
-
-.navigation-list__item--active {
+  }
+  
+  .navigation-list__item--active {
     text-decoration: none;
-}
-
-.profile__portrait {
+  }
+  
+  .profile__portrait {
     float: left;
     width: 250px;
     margin-right: 40px;
     border-radius: 50%
-}
-
-.page-footer {
+  }
+  
+  .page-footer {
     clear: both;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
-}
-
-.profile {
+  }
+  
+  .profile {
     max-width: 700px;
     margin: 0 auto;
-}
-
-* {
+  }
+  
+  * {
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.page-header {
+            box-sizing: border-box;
+  }
+  
+  .page-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -125,199 +136,199 @@ button:hover, button:focus, .button:hover, .button:focus {
     padding: 20px;
     margin: auto;
     border-bottom: 2px solid rgba(0, 0, 0, 1);
-}
-
-.page-header__item {
+  }
+  
+  .page-header__item {
     -webkit-box-flex: 0;
-    -ms-flex: 0 1 200px;
-    flex: 0 1 200px;
-}
-
-.page-header__item:last-child {
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+  }
+  
+  .page-header__item:last-child {
     -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     text-align: right;
-}
-
-.navigation-list {
+  }
+  
+  .navigation-list {
     list-style-type: none;
-}
-
-.navigation-list li {
+  }
+  
+  .navigation-list li {
     display: inline-block;
     margin-left: 15px;
-}
-
-.grid__item {
+  }
+  
+  .grid__item {
     display: inline-block;
     width: 33%;
-}
-
-.about-me {
+  }
+  
+  .about-me {
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
-}
-
-.about-me__item {
+  }
+  
+  .about-me__item {
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
-}
-
-.contact-title {
+  }
+  
+  .contact-title {
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
-}
-
-.contact-info {
+  }
+  
+  .contact-info {
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
-}
-
-#contact-form {
+  }
+  
+  #contact-form {
     text-align: center;
     margin-bottom: 50px;
-}
-
-@supports (display: grid) {
+  }
+  
+  @supports (display: grid) {
     .grid {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 20px;
-        margin: 0;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+      margin: 0;
     }
-}
-
-.grid__item {
+  }
+  
+  .grid__item {
     background-color: #e0eeee;
     width: auto;
     min-height: auto;
     margin: 0;
     padding: 20px;
-}
-
-.grid__item:last-child {
+  }
+  
+  .grid__item:last-child {
     -ms-grid-column: 3;
     grid-column: 3 / 3;
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     grid-row: 1 /3;
-}
-
-@media all and (max-width: 500px) {
+  }
+  
+  @media all and (max-width: 500px) {
     .grid {
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
     }
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
+  }
+  
+  @media all and (min-width: 500px) and (max-width: 750px) {
     .grid {
-        -ms-grid-columns: 1fr 20px 1fr;
-        grid-template-columns: 1fr 1fr;
+      -ms-grid-columns: 1fr 20px 1fr;
+      grid-template-columns: 1fr 1fr;
     }
-}
-
-@media all and (max-width: 750px) {
+  }
+  
+  @media all and (max-width: 750px) {
     .grid {
-        grid-gap: 10px;
+      grid-gap: 10px;
     }
     .grid__item:last-child {
-        grid-column: auto/auto;
-        grid-row: auto/auto;
+      grid-column: auto/auto;
+      grid-row: auto/auto;
     }
     h1 {
-        font-size: 22px;
+      font-size: 22px;
     }
-}
-
-@-webkit-keyframes sun-move {
+  }
+  
+  @-webkit-keyframes sun-move {
     from {
-        -webkit-transform: translate(0, 0);
-        transform: translate(0, 0)
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0)
     }
     to {
-        -webkit-transform: translate(0, -50px);
-        transform: translate(0, -50px)
+      -webkit-transform: translate(0, -50px);
+              transform: translate(0, -50px)
     }
-}
-
-@keyframes sun-move {
+  }
+  
+  @keyframes sun-move {
     from {
-        -webkit-transform: translate(0, 0);
-        transform: translate(0, 0)
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0)
     }
     to {
-        -webkit-transform: translate(0, -50px);
-        transform: translate(0, -50px)
+      -webkit-transform: translate(0, -50px);
+              transform: translate(0, -50px)
     }
-}
-
-.sun {
+  }
+  
+  .sun {
     -webkit-animation: 30s sun-move infinite alternate linear;
-    animation: 30s sun-move infinite alternate linear;
-}
-
-@-webkit-keyframes color-change-light {
+            animation: 30s sun-move infinite alternate linear;
+  }
+  
+  @-webkit-keyframes color-change-light {
     0% {
-        fill: #f9942f;
+      fill: #f9942f;
     }
     50% {
-        fill: #ee9943;
+      fill: #ee9943;
     }
     100% {
-        fill: #f6b36f;
+      fill: #f6b36f;
     }
-}
-
-@keyframes color-change-light {
+  }
+  
+  @keyframes color-change-light {
     0% {
-        fill: #f9942f;
+      fill: #f9942f;
     }
     50% {
-        fill: #ee9943;
+      fill: #ee9943;
     }
     100% {
-        fill: #f6b36f;
+      fill: #f6b36f;
     }
-}
-
-.firebig {
+  }
+  
+  .firebig {
     -webkit-animation: 2s color-change-light infinite alternate linear;
-    animation: 2s color-change-light infinite alternate linear;
-}
-
-@-webkit-keyframes color-change-dark {
+            animation: 2s color-change-light infinite alternate linear;
+  }
+  
+  @-webkit-keyframes color-change-dark {
     0% {
-        fill: #ff7c48;
+      fill: #ff7c48;
     }
     50% {
-        fill: #fd6a30;
+      fill: #fd6a30;
     }
     100% {
-        fill: #fd5227;
+      fill: #fd5227;
     }
-}
-
-@keyframes color-change-dark {
+  }
+  
+  @keyframes color-change-dark {
     0% {
-        fill: #ff7c48;
+      fill: #ff7c48;
     }
     50% {
-        fill: #fd6a30;
+      fill: #fd6a30;
     }
     100% {
-        fill: #fd5227;
+      fill: #fd5227;
     }
-}
-
-.firesmall {
+  }
+  
+  .firesmall {
     -webkit-animation: 4s color-change-dark infinite alternate linear;
-    animation: 4s color-change-dark infinite alternate linear;
-}
+            animation: 4s color-change-dark infinite alternate linear;
+  }
