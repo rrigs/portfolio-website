@@ -40,11 +40,6 @@ a {
 
 a:visited {
   color: var(--tertiary-color);
-  #code-button-link {
-    a: visited {
-      color: var(--white)
-    }
-  }
 }
 
 a:hover, a:focus {
@@ -138,6 +133,12 @@ button:hover, button:focus, .button:hover, .button:focus {
 .grid__item {
   display: inline-block;
   width: 33%;
+  text-align: center;
+}
+
+.work__screenshot {
+  width: 550px;
+  margin-right: 40px;
 }
 
 .about-me {
